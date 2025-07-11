@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    /* font-size: 100%; */
+    /* font: inherit; */
+    /* vertical-align: baseline; */
+}
+
+/* 초기화 하는 거 input 상자가 안보이길래 사용안함 */
+
+
+
+
+
+
+.background-image {
+    width: 100vw;
+    height: 300px;
+    background-image: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: cen;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+.header-title {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 24px 48px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/* 위에가 헤더 끝 */
+
+.main {
+    display: flex;
+
+}
+
+.L-buttons {
+    display: inline-flex;
+    flex-direction: column;
+    width: 0.2;
+    gap: 10px;
+    padding: 50px;
+}
+
+.center {
+    flex: 1;
+    padding-bottom: 600px;
+}
+
+.center>form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.info>div {
+    margin-bottom: 15px;
+}
+
+/* 위에까지 배치끝 */
+/* 이제 버튼 스타일만 빨리하고 넘기기 */
+
+.L-buttons>button{
+    background-color: greenyellow;
+    border: 0;
+    padding: 10px 50px;
+}
+
+/* 버튼 전체가 눌리게 하는 방법은 찾아봐야함*/
+
+.register{
+    display: flex;
+    justify-content: center;
+
+}
+.register > button{
+    background-color: greenyellow;
+    border: 0;
+    padding: 10px ;
+    width: 100%;
+
+
+}
+
+
+
+
+
+
+
+/* 메인 오래 헤매서 푸터는 정답지에서 복붙하여 학습 */
+/* 배경색, 글자색, 글자 수평정렬, 여백 상하px 좌우px, fixed로 아래 고정, */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    /* fixed로 변경하여 화면 하단에 고정, 하단에 붙이고, 너비는 전체로*/
+    bottom: 0;
+    width: 100%;
+}

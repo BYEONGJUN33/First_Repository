@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="background-image">
+            <h1 class="header-title">회원가입</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="L-buttons">
+            <!-- 여기서 div를 하나 더 하는 게 나으려나? 일단 진행 / 이따 버튼 스타일 조정이 되나? -->
+            <button><a href="#">로그인</a></button>
+            <button><a href="#">도움말</a></button>
+            <button><a href="#">약관</a></button>
+        </div>
+
+        <div class="center">
+            <form class="info">
+                <!-- 데이터를 전송해야 하니 form사용 -->
+                <div><!-- textarea 태그는 여러줄 써야하는 곳에 적합 -->
+                    <label for="name">&#128100; 이름:</label><br> <!-- br태그를 써야만 내려가나? 어떻게 나누지 -->
+                    <input type="text" id="name" name="name"></input>
+                </div>
+
+                <div>
+                    <label for="email">이메일:</label><br>
+                    <input type="text" id="email"></input>
+                </div>
+
+                <div>
+                    <label for="password">비밀번호:</label><br>
+                    <input type="text" id="password"></input>
+                </div>
+
+                <div class="gender">
+                    <label for="radio">성별:</label><br>
+                    <input type="radio">남성
+                    <input type="radio">여성
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox">
+                    <label for="terms">약관에 동의합니다.</label>
+                </div>
+
+                <div class="register">
+                    <button>회원가입</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        ©2025 MyWebsite | 연락처: email@example.com
+    </footer>
+
+
+</body>
+
+</html>
